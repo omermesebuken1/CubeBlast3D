@@ -11,6 +11,7 @@ public class GamePlay : MonoBehaviour
     [SerializeField] private GameObject boxesFinished;
     [SerializeField] private GameObject touchBlocker;
     [SerializeField] private GameObject restartButton;
+    
 
     private int moves;
 

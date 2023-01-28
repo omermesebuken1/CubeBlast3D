@@ -33,6 +33,8 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private float targetStartPosition;
 
+    public float cameraGeneralSensivity = 1f;
+
 
     private void Start() {
         
@@ -46,6 +48,7 @@ public class CameraController : MonoBehaviour
     private void Update()
     {
         
+        UITouchChecker();
 
         if (Input.touchCount > 0)
         {
@@ -64,11 +67,11 @@ public class CameraController : MonoBehaviour
 
                     cam.transform.LookAt(target);
 
-                    target.position = new Vector3(target.position.x, Mathf.Clamp(target.position.y + direction.y*CameraUpDownSensivity*Time.deltaTime,CameraMinHeight,CameraMaxHeight), target.position.z);
+                    target.position = new Vector3(target.position.x, Mathf.Clamp(target.position.y + direction.y*cameraGeneralSensivity*CameraUpDownSensivity*Time.deltaTime,CameraMinHeight,CameraMaxHeight), target.position.z);
 
                     cam.transform.rotation *= Quaternion.Euler(CameraOffset);
 
-                    cam.transform.RotateAround(target.position,new Vector3(0,-1,0),CameraRotationSensivity*direction.x*Time.deltaTime);
+                    cam.transform.RotateAround(target.position,new Vector3(0,-1,0),cameraGeneralSensivity*CameraRotationSensivity*direction.x*Time.deltaTime);
                     
                     cam.transform.position = new Vector3(cam.transform.position.x, target.position.y, cam.transform.position.z);
 
@@ -81,6 +84,30 @@ public class CameraController : MonoBehaviour
 
         }
 
+    }
+
+
+    private void UITouchChecker()
+    {
+        //Exit if touch is over UI element.
+        foreach (Touch touch in Input.touches)
+        {
+            int id = touch.fingerId;
+
+            if (EventSystem.current.IsPointerOverGameObject(id))
+            {
+
+                touchEnabled = false;
+
+                return;
+            }
+
+            else
+            {
+                touchEnabled = true;
+
+            }
+        }
     }
 
    
