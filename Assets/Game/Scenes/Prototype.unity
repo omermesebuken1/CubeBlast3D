@@ -13347,6 +13347,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969052666}
   m_Mesh: {fileID: -5495902117074765545, guid: 00d1211373de8453f8e6a3169c8b3576, type: 3}
+--- !u!1 &970290344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3375998897406754264, guid: 042838ca2c3064bf99c691fc41bc0e32,
+    type: 3}
+  m_PrefabInstance: {fileID: 3375998896544361339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &972214152
 Material:
   serializedVersion: 8
@@ -30062,6 +30068,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameUICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3375998896935075500, guid: 042838ca2c3064bf99c691fc41bc0e32,
+        type: 3}
+      propertyPath: Panel
+      value: 
+      objectReference: {fileID: 970290344}
     - target: {fileID: 3375998896935075501, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
       propertyPath: m_Pivot.x
