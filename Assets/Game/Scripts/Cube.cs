@@ -14,7 +14,8 @@ public class Cube : MonoBehaviour, IPooledObject
     public bool popWithoutChain;
     [SerializeField] private GameObject _replacement;
 
-
+   [SerializeField] private float raycastLength;
+   [SerializeField]  private LayerMask cubeLayer;
 
 
 
@@ -49,6 +50,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         PopChain();
 
+        AutomaticPhysics();
 
     }
 
@@ -439,6 +441,22 @@ public class Cube : MonoBehaviour, IPooledObject
                 GetComponent<MeshRenderer>().material.color = Color.yellow;
                 break;
         }
+    }
+
+
+    
+    private void AutomaticPhysics()
+    {
+
+        if(Physics.Raycast(transform.position,-transform.up,raycastLength,cubeLayer))
+        {
+            transform.Translate(new Vector3(0,0,0));
+        }
+        else
+        {
+            transform.Translate(-transform.up*Time.deltaTime);
+        }
+
     }
 
 

@@ -7,12 +7,17 @@ public class Box : MonoBehaviour
     [HideInInspector] public bool pop;
     private Material thisMaterial;
 
+    [SerializeField] private float raycastLength;
+   [SerializeField]  private LayerMask cubeLayer;
+
     private void Start() {
 
         thisMaterial = GetComponent<MeshRenderer>().material;
         pop = false;
     }
     private void Update() {
+
+        AutomaticPhysics();
         
         if(pop)
         {
@@ -28,5 +33,19 @@ public class Box : MonoBehaviour
 
             Destroy(this.gameObject);
         }
+    }
+
+     private void AutomaticPhysics()
+    {
+
+        if(Physics.Raycast(transform.position,-transform.up,raycastLength,cubeLayer))
+        {
+            transform.Translate(new Vector3(0,0,0));
+        }
+        else
+        {
+            transform.Translate(-transform.up*Time.deltaTime);
+        }
+
     }
 }

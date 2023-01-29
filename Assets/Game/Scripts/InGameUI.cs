@@ -29,7 +29,7 @@ public class InGameUI : MonoBehaviour
     private void Update()
     {
 
-        if (FindObjectOfType<CameraController>() != null && Panel.activeSelf)
+        if (FindObjectOfType<CameraController>())
         {
 
             FindObjectOfType<CameraController>().cameraGeneralSensivity = camSensSlider.value / 50;

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5284818119112577597}
   - component: {fileID: 690229108904419510}
   - component: {fileID: 741605352366361984}
-  - component: {fileID: 467176993208019212}
   m_Layer: 6
   m_Name: BombCube
   m_TagString: Bomb
@@ -105,6 +104,7 @@ MonoBehaviour:
     m_Bits: 65
   bombArea: 5
   pop: 0
+  raycastLength: 2
 --- !u!65 &741605352366361984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -118,19 +118,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.02, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &467176993208019212
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5933367596160087016}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 122
-  m_CollisionDetection: 0

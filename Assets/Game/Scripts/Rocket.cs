@@ -7,6 +7,9 @@ public class Rocket : MonoBehaviour
     [HideInInspector] public bool pop;
     [SerializeField] private GameObject rocketUstPrefab;
     [SerializeField] private GameObject rocketAltPrefab;
+
+    [SerializeField] private float raycastLength;
+   [SerializeField]  private LayerMask cubeLayer;
    
     void Update()
     {
@@ -19,5 +22,22 @@ public class Rocket : MonoBehaviour
             Destroy(this.gameObject);
         }
         
+        AutomaticPhysics();
+
     }
+
+    private void AutomaticPhysics()
+    {
+
+        if(Physics.Raycast(transform.position,-transform.up,raycastLength,cubeLayer))
+        {
+            transform.Translate(new Vector3(0,0,0));
+        }
+        else
+        {
+            transform.Translate(-transform.up*Time.deltaTime);
+        }
+
+    }
+
 }

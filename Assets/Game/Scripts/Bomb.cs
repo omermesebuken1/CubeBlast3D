@@ -14,10 +14,13 @@ public class Bomb : MonoBehaviour
    [SerializeField] private float bombArea;
 
    [HideInInspector] public bool pop;
+   [SerializeField] private float raycastLength;
+
    private void Update() {
 
     objects = Physics.OverlapSphere(transform.position,bombArea,cubeLayer);
     Explode();
+    AutomaticPhysics();
 
    }
 
@@ -65,5 +68,19 @@ public class Bomb : MonoBehaviour
         }
         
         
+    }
+
+    private void AutomaticPhysics()
+    {
+
+        if(Physics.Raycast(transform.position,-transform.up,raycastLength,cubeLayer))
+        {
+            transform.Translate(new Vector3(0,0,0));
+        }
+        else
+        {
+            transform.Translate(-transform.up*Time.deltaTime);
+        }
+
     }
 }
