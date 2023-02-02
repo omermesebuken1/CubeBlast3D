@@ -104,7 +104,8 @@ MonoBehaviour:
     m_Bits: 65
   bombArea: 5
   pop: 0
-  raycastLength: 2
+  raycastLength: 1.01
+  gravitySpeed: 7
 --- !u!65 &741605352366361984
 BoxCollider:
   m_ObjectHideFlags: 0

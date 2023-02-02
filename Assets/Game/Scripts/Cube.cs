@@ -14,10 +14,19 @@ public class Cube : MonoBehaviour, IPooledObject
     public bool popWithoutChain;
     [SerializeField] private GameObject _replacement;
 
-   [SerializeField] private float raycastLength;
-   [SerializeField]  private LayerMask cubeLayer;
+   private float distance;
+   private float distance1;
+   private float distance2;
 
+   private float closestGrid;
 
+   private bool notOnGrid;
+
+   private bool downEmpty;
+
+   private int closestY;
+
+   
 
 
 
@@ -447,17 +456,75 @@ public class Cube : MonoBehaviour, IPooledObject
     
     private void AutomaticPhysics()
     {
-
-        if(Physics.Raycast(transform.position,-transform.up,raycastLength,cubeLayer))
+        
+        
+        if(transform.position.y % 2.05 != 0)
         {
-            transform.Translate(new Vector3(0,0,0));
+            notOnGrid = true;
+            
         }
-        else
+
+        if(notOnGrid)
         {
-            transform.Translate(-transform.up*Time.deltaTime);
+
+            goToClosestGrid();
+            
+
         }
 
     }
+
+    private float FindClosestGrid()
+    {
+        
+
+        closestY = Mathf.FloorToInt(transform.position.y / 2.05f);
+        
+        distance1 = Mathf.Abs(transform.position.y - closestY*2.05f);
+        distance2 = Mathf.Abs(transform.position.y - (closestY+1)*2.05f);
+        
+        if(distance2 >= distance1)
+        {
+            closestGrid = closestY*2.05f;
+            return closestGrid;
+        }
+        else    
+        {
+            closestGrid = (closestY+1)*2.05f;
+            return closestGrid;
+        }
+
+
+    }    
+    
+    private void goToClosestGrid()
+    {
+            if(transform.position.y % 2.05 != 0)
+            {
+                float newY = FindClosestGrid();
+                print("ClosestY: " + closestY + " closestGrid: " + closestGrid + " newY: " + newY);
+                Vector3 target = new Vector3(transform.position.x, newY, transform.position.z);
+
+                distance = Mathf.Abs(transform.position.y - newY);
+                //print(distance);
+
+                if(distance<0.1f)
+                {
+                    transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+                }
+                else
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime);
+                    
+                }
+            
+                
+                
+
+            }
+            
+    }
+    
 
 
 

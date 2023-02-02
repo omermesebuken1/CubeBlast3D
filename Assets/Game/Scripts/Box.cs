@@ -7,8 +7,6 @@ public class Box : MonoBehaviour
     [HideInInspector] public bool pop;
     private Material thisMaterial;
 
-    [SerializeField] private float raycastLength;
-   [SerializeField]  private LayerMask cubeLayer;
 
     private void Start() {
 
@@ -38,13 +36,13 @@ public class Box : MonoBehaviour
      private void AutomaticPhysics()
     {
 
-        if(Physics.Raycast(transform.position,-transform.up,raycastLength,cubeLayer))
+        if(Physics.Raycast(transform.position,-transform.up,ManualGravity.instance.raycastLength,ManualGravity.instance.cubeLayer))
         {
             transform.Translate(new Vector3(0,0,0));
         }
         else
         {
-            transform.Translate(-transform.up*Time.deltaTime);
+            transform.Translate(-transform.up*Time.deltaTime*ManualGravity.instance.gravitySpeed);
         }
 
     }

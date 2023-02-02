@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pop: 0
-  raycastLength: 2
+  raycastLength: 1.05
   cubeLayer:
     serializedVersion: 2
     m_Bits: 65
+  gravitySpeed: 7

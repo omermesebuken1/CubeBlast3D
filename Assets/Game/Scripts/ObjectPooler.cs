@@ -74,7 +74,21 @@ public class ObjectPooler : MonoBehaviour
     public void SetObjects()
     {
        
-        
+        if(activeObjects.Count == 0)
+        {
+
+            for (int i = 0; i < size; i++)
+            {
+                GameObject obj = Instantiate(prefab);
+                obj.name = "Kutu" + i.ToString();
+                obj.SetActive(false);
+                inactiveObjects.Add(obj);
+
+            }
+
+        }
+        else
+        {
 
             for (int i = size - activeObjects.Count; i < size; i++)
             {
@@ -84,6 +98,11 @@ public class ObjectPooler : MonoBehaviour
                 inactiveObjects.Add(obj);
 
             }
+
+        }
+        
+
+            
 
         
 

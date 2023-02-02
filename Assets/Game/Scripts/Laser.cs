@@ -7,20 +7,15 @@ public class Laser : MonoBehaviour
     private Collider[] objects;
    [SerializeField] private GameObject Effect1;
 
-
-   [SerializeField] private LayerMask cubeLayer;
-
    [HideInInspector] public bool pop;
-
-   [SerializeField] private float raycastLength;
-
    [SerializeField] private Vector3 BoxSize;
 
+  
    
 
    private void Update() {
 
-    objects = Physics.OverlapBox(transform.position,BoxSize,transform.rotation,cubeLayer);
+    objects = Physics.OverlapBox(transform.position,BoxSize,transform.rotation,ManualGravity.instance.cubeLayer);
     Explode();
 
     AutomaticPhysics();
@@ -75,13 +70,13 @@ public class Laser : MonoBehaviour
     private void AutomaticPhysics()
     {
 
-        if(Physics.Raycast(transform.position,-transform.up,raycastLength,cubeLayer))
+        if(Physics.Raycast(transform.position,-transform.up,ManualGravity.instance.raycastLength,ManualGravity.instance.cubeLayer))
         {
             transform.Translate(new Vector3(0,0,0));
         }
         else
         {
-            transform.Translate(-transform.up*Time.deltaTime);
+            transform.Translate(-transform.up*Time.deltaTime*ManualGravity.instance.gravitySpeed);
         }
 
     }

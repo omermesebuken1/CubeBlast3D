@@ -115,5 +115,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 65
   pop: 0
-  raycastLength: 2
+  raycastLength: 1.01
   BoxSize: {x: 10, y: 1, z: 10}
+  gravitySpeed: 7

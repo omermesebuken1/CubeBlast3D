@@ -109,10 +109,11 @@ MonoBehaviour:
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
-  raycastLength: 2
+  raycastLength: 1.01
   cubeLayer:
     serializedVersion: 2
     m_Bits: 65
+  gravitySpeed: 7
 --- !u!65 &7972369841758604948
 BoxCollider:
   m_ObjectHideFlags: 0
