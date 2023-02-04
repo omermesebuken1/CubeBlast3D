@@ -31,7 +31,14 @@ public class KillerScript : MonoBehaviour, IPooledObject
             part.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
             //part.transform.position = part.GetComponent<BrokenParticlesCube>().realPos;
             //part.transform.localScale = new Vector3(100, 100, 100);
-            part.GetComponent<Rigidbody>().AddExplosionForce(explosionForce * Random.Range(1, 3f), transform.position, Random.Range(1f, 3f), Random.Range(0, 1f));
+            //part.GetComponent<Rigidbody>().AddExplosionForce(explosionForce * Random.Range(1, 3f), FindObjectOfType<PopCounter>().lastTouched.transform.position, Random.Range(1f, 3f), Random.Range(0, 1f));
+            float expX = 0;
+            //float expy = part.transform.position.y;
+            float expy = FindObjectOfType<PopCounter>().lastTouched.transform.position.y;
+            float expZ = 0;
+
+            Vector3 explosionLocation = new Vector3(expX,expy,expZ);
+            part.GetComponent<Rigidbody>().AddExplosionForce(explosionForce*Random.Range(0.1f,3f),explosionLocation,70);
 
 
         }

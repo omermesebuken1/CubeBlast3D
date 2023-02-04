@@ -5,13 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cube
-  - Box
   - Ground
   - Rocket
   - Bomb
   - Laser
   - Glass
   - DownCube
+  - Box
   layers:
   - Default
   - TransparentFX

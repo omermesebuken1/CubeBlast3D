@@ -25,8 +25,6 @@ public class RocketAlt : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        
-
         if (other.gameObject.CompareTag("Cube"))
         {
             other.GetComponent<Cube>().popWithoutChain = true;

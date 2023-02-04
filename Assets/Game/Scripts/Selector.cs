@@ -44,7 +44,7 @@ public class Selector : MonoBehaviour
                     {
                         if (hitInfo.collider.gameObject.GetComponent<Cube>() != null)
                         {
-                            if (hitInfo.collider.gameObject.GetComponent<Cube>().isSelectable())
+                            if (hitInfo.collider.gameObject.GetComponent<Cube>().isSelectable() && !hitInfo.collider.gameObject.GetComponent<Cube>().isMoving)
                             {
                                 hitObject = hitInfo.collider.gameObject;
 

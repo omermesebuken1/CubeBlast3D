@@ -9,6 +9,9 @@ public class ManualGravity: MonoBehaviour
    [SerializeField] public float raycastLength = 1.05f;
    [SerializeField] public LayerMask cubeLayer;
    [SerializeField] public float gravitySpeed;
+   [HideInInspector] public Vector3 velocity = Vector3.zero;
+
+   
 
     private void Awake() 
 { 

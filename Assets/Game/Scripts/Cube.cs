@@ -5,28 +5,24 @@ using UnityEngine;
 public class Cube : MonoBehaviour, IPooledObject
 {
 
-    private RaycastHit hitInfo;
+    
     private Material thisMetarial;
     private int rand;
     public GameObject[] touchingObject = new GameObject[6];
-    public bool selectable;
-    public bool pop;
-    public bool popWithoutChain;
+    [HideInInspector]public bool selectable;
+    [HideInInspector] public bool pop;
+    [HideInInspector] public bool popWithoutChain;
     [SerializeField] private GameObject _replacement;
 
-   private float distance;
-   private float distance1;
-   private float distance2;
-
-   private float closestGrid;
-
-   private bool notOnGrid;
-
-   private bool downEmpty;
-
-   private int closestY;
-
-   
+    private RaycastHit hitInfo;
+    private float distance;
+    private float distance1;
+    private float distance2;
+    private float closestGrid;
+    private bool notOnGrid;
+    private bool downEmpty;
+    private int closestY;
+    [HideInInspector] public bool isMoving;
 
 
 
@@ -54,11 +50,13 @@ public class Cube : MonoBehaviour, IPooledObject
 
     private void Update()
     {
+        if(!isMoving)
+        {
+            ConnectionChecker();
 
-        ConnectionChecker();
-
-        PopChain();
-
+            PopChain();
+        }
+    
         AutomaticPhysics();
 
     }
@@ -69,7 +67,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, transform.forward, out hitInfo, 2))
         {
-            if (hitInfo.transform.gameObject.GetComponent<Cube>() != null || hitInfo.transform.gameObject.GetComponent<Box>() != null)
+            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[0] = hitInfo.transform.gameObject;
@@ -83,7 +81,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, -transform.forward, out hitInfo, 2))
         {
-            if (hitInfo.transform.gameObject.GetComponent<Cube>() != null || hitInfo.transform.gameObject.GetComponent<Box>() != null)
+            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[1] = hitInfo.transform.gameObject;
@@ -98,7 +96,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, transform.right, out hitInfo, 2))
         {
-            if (hitInfo.transform.gameObject.GetComponent<Cube>() != null || hitInfo.transform.gameObject.GetComponent<Box>() != null)
+            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[2] = hitInfo.transform.gameObject;
@@ -112,7 +110,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, -transform.right, out hitInfo, 2))
         {
-            if (hitInfo.transform.gameObject.GetComponent<Cube>() != null || hitInfo.transform.gameObject.GetComponent<Box>() != null)
+            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[3] = hitInfo.transform.gameObject;
@@ -127,7 +125,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, transform.up, out hitInfo, 2))
         {
-            if (hitInfo.transform.gameObject.GetComponent<Cube>() != null || hitInfo.transform.gameObject.GetComponent<Box>() != null)
+            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[4] = hitInfo.transform.gameObject;
@@ -141,9 +139,9 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, -transform.up, out hitInfo, 2))
         {
-            if (hitInfo.transform.gameObject.GetComponent<Cube>() != null || hitInfo.transform.gameObject.GetComponent<Box>() != null)
+            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
-
+                
                 touchingObject[5] = hitInfo.transform.gameObject;
             }
 
@@ -158,7 +156,6 @@ public class Cube : MonoBehaviour, IPooledObject
 
     }
 
-
     private void PopChain()
     {
         if (pop)
@@ -167,7 +164,7 @@ public class Cube : MonoBehaviour, IPooledObject
             {
                 if (touchingObject[0].CompareTag("Box"))
                 {
-                    touchingObject[0].GetComponent<Box>().pop = true;
+                    touchingObject[0].GetComponentInParent<Box>().pop = true;
                 }
                 if (touchingObject[0].CompareTag("Cube"))
                 {
@@ -256,7 +253,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
             if (ObjectPoolerBrokenCubes.Instance != null)
             {
-                var replacement = ObjectPoolerBrokenCubes.Instance.GetObject(transform.position,transform.rotation);
+                var replacement = ObjectPoolerBrokenCubes.Instance.GetObject(transform.position, transform.rotation);
                 var mrs = replacement.GetComponentsInChildren<MeshRenderer>();
                 foreach (var mat in mrs)
                 {
@@ -264,8 +261,8 @@ public class Cube : MonoBehaviour, IPooledObject
                 }
 
                 FindObjectOfType<PopCounter>().popCount++;
-                
-                if(ObjectPooler.Instance != null)
+
+                if (ObjectPooler.Instance != null)
                 {
                     ObjectPooler.Instance.ReturnObject(this.gameObject);
                 }
@@ -277,7 +274,7 @@ public class Cube : MonoBehaviour, IPooledObject
             }
             else
             {
-                var replacement = Instantiate(_replacement,transform.position,transform.rotation);
+                var replacement = Instantiate(_replacement, transform.position, transform.rotation);
                 var mrs = replacement.GetComponentsInChildren<MeshRenderer>();
                 foreach (var mat in mrs)
                 {
@@ -285,7 +282,7 @@ public class Cube : MonoBehaviour, IPooledObject
                 }
 
                 FindObjectOfType<PopCounter>().popCount++;
-                if(ObjectPooler.Instance != null)
+                if (ObjectPooler.Instance != null)
                 {
                     ObjectPooler.Instance.ReturnObject(this.gameObject);
                 }
@@ -293,7 +290,7 @@ public class Cube : MonoBehaviour, IPooledObject
                 {
                     gameObject.SetActive(false);
                 }
-                
+
             }
 
 
@@ -307,7 +304,7 @@ public class Cube : MonoBehaviour, IPooledObject
         {
             if (ObjectPoolerBrokenCubes.Instance != null)
             {
-                var replacement = ObjectPoolerBrokenCubes.Instance.GetObject(transform.position,transform.rotation);
+                var replacement = ObjectPoolerBrokenCubes.Instance.GetObject(transform.position, transform.rotation);
                 var mrs = replacement.GetComponentsInChildren<MeshRenderer>();
                 foreach (var mat in mrs)
                 {
@@ -315,8 +312,8 @@ public class Cube : MonoBehaviour, IPooledObject
                 }
 
                 FindObjectOfType<PopCounter>().popCount++;
-                
-                if(ObjectPooler.Instance != null)
+
+                if (ObjectPooler.Instance != null)
                 {
                     ObjectPooler.Instance.ReturnObject(this.gameObject);
                 }
@@ -328,7 +325,7 @@ public class Cube : MonoBehaviour, IPooledObject
             }
             else
             {
-                var replacement = Instantiate(_replacement,transform.position,transform.rotation);
+                var replacement = Instantiate(_replacement, transform.position, transform.rotation);
                 var mrs = replacement.GetComponentsInChildren<MeshRenderer>();
                 foreach (var mat in mrs)
                 {
@@ -336,8 +333,8 @@ public class Cube : MonoBehaviour, IPooledObject
                 }
 
                 FindObjectOfType<PopCounter>().popCount++;
-                
-                if(ObjectPooler.Instance != null)
+
+                if (ObjectPooler.Instance != null)
                 {
                     ObjectPooler.Instance.ReturnObject(this.gameObject);
                 }
@@ -349,7 +346,6 @@ public class Cube : MonoBehaviour, IPooledObject
 
         }
     }
-
 
     public bool isSelectable()
     {
@@ -430,8 +426,6 @@ public class Cube : MonoBehaviour, IPooledObject
         return selectable;
     }
 
-
-
     public void SetMetarial()
     {
         rand = Random.Range(1, 5);
@@ -452,79 +446,87 @@ public class Cube : MonoBehaviour, IPooledObject
         }
     }
 
-
-    
     private void AutomaticPhysics()
     {
-        
-        
-        if(transform.position.y % 2.05 != 0)
+        if (Physics.Raycast(transform.position, -transform.up, out hitInfo, ManualGravity.instance.raycastLength, ManualGravity.instance.cubeLayer))
         {
-            notOnGrid = true;
-            
+            downEmpty = false;
         }
-
-        if(notOnGrid)
+        else
         {
+            downEmpty = true;
+            isMoving = true;
+        }
+        if (downEmpty)
+        {
+            Vector3 taban = new Vector3(transform.position.x, 0, transform.position.z);
+            transform.position = Vector3.SmoothDamp(transform.position, taban, ref ManualGravity.instance.velocity, ManualGravity.instance.gravitySpeed * Time.deltaTime);
+        }
+        else
+        {
+            if (transform.position.y % 2.05 != 0)
+            {
+                notOnGrid = true;
 
-            goToClosestGrid();
-            
+            }
+            if (notOnGrid)
+            {
+                goToClosestGrid();
 
+            }
         }
 
     }
 
     private float FindClosestGrid()
     {
-        
 
         closestY = Mathf.FloorToInt(transform.position.y / 2.05f);
-        
-        distance1 = Mathf.Abs(transform.position.y - closestY*2.05f);
-        distance2 = Mathf.Abs(transform.position.y - (closestY+1)*2.05f);
-        
-        if(distance2 >= distance1)
+
+        distance1 = Mathf.Abs(transform.position.y - closestY * 2.05f);
+        distance2 = Mathf.Abs(transform.position.y - (closestY + 1) * 2.05f);
+
+        if (distance2 >= distance1)
         {
-            closestGrid = closestY*2.05f;
+            closestGrid = closestY * 2.05f;
             return closestGrid;
         }
-        else    
+        else
         {
-            closestGrid = (closestY+1)*2.05f;
+            closestGrid = (closestY + 1) * 2.05f;
             return closestGrid;
         }
 
 
-    }    
-    
+    }
+
     private void goToClosestGrid()
     {
-            if(transform.position.y % 2.05 != 0)
-            {
-                float newY = FindClosestGrid();
-                print("ClosestY: " + closestY + " closestGrid: " + closestGrid + " newY: " + newY);
-                Vector3 target = new Vector3(transform.position.x, newY, transform.position.z);
-
-                distance = Mathf.Abs(transform.position.y - newY);
-                //print(distance);
-
-                if(distance<0.1f)
-                {
-                    transform.position = new Vector3(transform.position.x, newY, transform.position.z);
-                }
-                else
-                {
-                    transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime);
-                    
-                }
+        if (transform.position.y % 2.05 != 0)
+        {
+            float newY = FindClosestGrid();
             
+            Vector3 target = new Vector3(transform.position.x, newY, transform.position.z);
+
+            distance = Mathf.Abs(transform.position.y - newY);
+            
+
+            if (distance < 0.1f)
+            {
+                transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+                isMoving = false;
+            }
+            else
+            {
                 
-                
+                transform.position = Vector3.SmoothDamp(transform.position, target, ref ManualGravity.instance.velocity, ManualGravity.instance.gravitySpeed * Time.deltaTime);
 
             }
-            
+
+        }
+
     }
-    
+
 
 
 
