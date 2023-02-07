@@ -208,18 +208,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &41335966
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -347,18 +341,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &44925349
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -652,18 +640,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &84715359
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -871,18 +853,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &93247596
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1010,18 +986,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &95034982
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1346,18 +1316,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &112682128
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1756,18 +1720,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &127172322
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1895,18 +1853,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &134632984
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2034,18 +1986,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &143728697
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2284,18 +2230,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &159583827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2991,18 +2931,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &212265573
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3781,18 +3715,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &278414161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3932,18 +3860,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &300631075
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4071,18 +3993,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &322435776
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4321,18 +4237,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &325990166
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4615,18 +4525,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &361997093
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4945,18 +4849,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &377552730
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5084,18 +4982,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &385895953
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5303,18 +5195,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &390385034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5922,18 +5808,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &454206906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6067,18 +5947,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &455489336
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6764,6 +6638,12 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
+--- !u!1 &495000009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 495000009, guid: 042838ca2c3064bf99c691fc41bc0e32,
+    type: 3}
+  m_PrefabInstance: {fileID: 3375998896544361339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &500295815
 Material:
   serializedVersion: 8
@@ -6952,18 +6832,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &504601713
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7132,18 +7006,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &517296487
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7194,6 +7062,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517296482}
   m_Mesh: {fileID: -5495902117074765545, guid: 84583bcc125e1432e845794e6a66a4a2, type: 3}
+--- !u!1 &520974712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 520974712, guid: 042838ca2c3064bf99c691fc41bc0e32,
+    type: 3}
+  m_PrefabInstance: {fileID: 3375998896544361339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &538449548
 Material:
   serializedVersion: 8
@@ -7493,18 +7367,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &554627936
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7632,18 +7500,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &555827204
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7851,18 +7713,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &562965221
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8181,18 +8037,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &581006112
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8511,18 +8361,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &605132799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8650,18 +8494,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &619890151
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8789,18 +8627,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &624810916
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9045,18 +8877,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &662055973
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9794,18 +9620,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &748179328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10050,18 +9870,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &784530304
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11091,18 +10905,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &860294649
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11310,18 +11118,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &867403024
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12371,18 +12173,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &932753744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12627,18 +12423,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &955310103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12689,12 +12479,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955310098}
   m_Mesh: {fileID: -5495902117074765545, guid: 84583bcc125e1432e845794e6a66a4a2, type: 3}
---- !u!1 &970290344 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3375998897406754264, guid: 042838ca2c3064bf99c691fc41bc0e32,
-    type: 3}
-  m_PrefabInstance: {fileID: 3375998896544361339}
-  m_PrefabAsset: {fileID: 0}
 --- !u!21 &975176193
 Material:
   serializedVersion: 8
@@ -12883,18 +12667,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &975456929
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13344,18 +13122,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1000643829
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13927,18 +13699,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1045926853
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14066,18 +13832,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1047738985
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14205,18 +13965,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1053838709
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14641,18 +14395,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1070747403
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14780,18 +14528,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1082958698
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15110,18 +14852,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1121836349
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15329,18 +15065,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1128345096
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15468,18 +15198,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1135114306
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15607,18 +15331,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1150741821
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15826,18 +15544,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1168016308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16076,18 +15788,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1183113905
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16215,18 +15921,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1225232080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16354,18 +16054,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1225712879
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16499,18 +16193,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1262780486
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16749,18 +16437,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1271606809
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16959,13 +16641,13 @@ Transform:
   - {fileID: 1353536112}
   - {fileID: 1731383643}
   - {fileID: 62397430}
+  - {fileID: 1061606366}
   - {fileID: 92582611}
   - {fileID: 1949347786}
   - {fileID: 789776245}
   - {fileID: 2099232017}
   - {fileID: 360702015}
   - {fileID: 181261421}
-  - {fileID: 1061606366}
   - {fileID: 1757164354}
   - {fileID: 388113173}
   - {fileID: 1597433815}
@@ -17059,18 +16741,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1292662412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17198,18 +16874,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1293774650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17260,6 +16930,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293774645}
   m_Mesh: {fileID: -5495902117074765545, guid: 84583bcc125e1432e845794e6a66a4a2, type: 3}
+--- !u!1 &1295038865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 177638, guid: 0abab5bb77339e4428787a870eb31bd3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2034481455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310584417
 GameObject:
   m_ObjectHideFlags: 0
@@ -17337,18 +17013,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1310584422
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17667,18 +17337,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1340364046
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18126,18 +17790,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1395163500
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18789,18 +18447,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1421670651
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19310,18 +18962,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1473443860
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19635,18 +19281,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1512527064
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19996,18 +19636,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1532375869
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20135,18 +19769,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1550335800
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20274,18 +19902,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1556332285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20871,18 +20493,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1602586652
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21121,18 +20737,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1659248983
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21260,18 +20870,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1676597132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21399,18 +21003,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1677366020
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21951,18 +21549,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1727295152
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22287,18 +21879,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1752496464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22692,18 +22278,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1773131061
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22831,18 +22411,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1778961149
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23161,18 +22735,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1808425730
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23491,18 +23059,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1818719665
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23932,18 +23494,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1850417007
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24342,18 +23898,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1886506997
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24481,18 +24031,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1888163699
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25003,18 +24547,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &1977176036
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25336,6 +24874,216 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2029392376}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2034481455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 168050, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177638, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_Name
+      value: '[Graphy]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 177638, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22415034, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5657
+      objectReference: {fileID: 0}
+    - target: {fileID: 22415034, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5657
+      objectReference: {fileID: 0}
+    - target: {fileID: 22415034, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5657
+      objectReference: {fileID: 0}
+    - target: {fileID: 22415034, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -271
+      objectReference: {fileID: 0}
+    - target: {fileID: 22415034, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -663
+      objectReference: {fileID: 0}
+    - target: {fileID: 22431670, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5657
+      objectReference: {fileID: 0}
+    - target: {fileID: 22431670, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5657
+      objectReference: {fileID: 0}
+    - target: {fileID: 22431670, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5657
+      objectReference: {fileID: 0}
+    - target: {fileID: 22431670, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -271
+      objectReference: {fileID: 0}
+    - target: {fileID: 22431670, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -385
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493042, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1945
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493042, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1945
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493042, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1945
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493042, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -739
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493042, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -167
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010525505420, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.98039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011126260580, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011493924554, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.92941177
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013578262806, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.9137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010937413736, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2034332
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010937413736, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2034332
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010937413736, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2034332
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010937413736, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010937413736, guid: 0abab5bb77339e4428787a870eb31bd3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 169
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
 --- !u!1 &2036794318
 GameObject:
   m_ObjectHideFlags: 0
@@ -25413,18 +25161,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2036794323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25552,18 +25294,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2037807653
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25691,18 +25427,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2044782883
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25941,18 +25671,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2047959330
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26080,18 +25804,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2048218362
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26219,18 +25937,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2052269785
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26469,18 +26181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2054723362
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26941,18 +26647,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2069723130
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27080,18 +26780,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2075960398
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27516,18 +27210,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2114491938
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27655,18 +27343,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610af529837764e55bfe83829e7a3b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchingObject:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   selectable: 0
   pop: 0
   popWithoutChain: 0
   _replacement: {fileID: 5578614985300410192, guid: 6fcde820d3b444f0da9045be833a0107,
     type: 3}
+  isMoving: 0
 --- !u!23 &2136709081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28198,6 +27880,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 495000011, guid: 042838ca2c3064bf99c691fc41bc0e32, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenDiag
+      objectReference: {fileID: 0}
+    - target: {fileID: 520974714, guid: 042838ca2c3064bf99c691fc41bc0e32, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseDiag
+      objectReference: {fileID: 0}
     - target: {fileID: 3375998896605963933, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -28206,17 +27896,12 @@ PrefabInstance:
     - target: {fileID: 3375998896605963933, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3375998896605963933, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
       propertyPath: m_AnchorMin.x
       value: 0.4949495
-      objectReference: {fileID: 0}
-    - target: {fileID: 3375998896616623068, guid: 042838ca2c3064bf99c691fc41bc0e32,
-        type: 3}
-      propertyPath: m_Value
-      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3375998896898462571, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
@@ -28228,16 +27913,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameUICanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3375998896935075497, guid: 042838ca2c3064bf99c691fc41bc0e32,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3375998896935075500, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
-      propertyPath: Panel
+      propertyPath: Diag
       value: 
-      objectReference: {fileID: 970290344}
+      objectReference: {fileID: 1295038865}
+    - target: {fileID: 3375998896935075500, guid: 042838ca2c3064bf99c691fc41bc0e32,
+        type: 3}
+      propertyPath: DiagOn
+      value: 
+      objectReference: {fileID: 520974712}
+    - target: {fileID: 3375998896935075500, guid: 042838ca2c3064bf99c691fc41bc0e32,
+        type: 3}
+      propertyPath: DiagOff
+      value: 
+      objectReference: {fileID: 495000009}
     - target: {fileID: 3375998896935075501, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
       propertyPath: m_Pivot.x
@@ -28361,7 +28051,7 @@ PrefabInstance:
     - target: {fileID: 3375998897624841232, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 042838ca2c3064bf99c691fc41bc0e32, type: 3}
@@ -29149,6 +28839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ManuelGravity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300699428763742531, guid: ba91ce4c494cd4c8a856787b05eb80a2,
+        type: 3}
+      propertyPath: gravitySpeed
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba91ce4c494cd4c8a856787b05eb80a2, type: 3}

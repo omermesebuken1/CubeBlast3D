@@ -5,11 +5,11 @@ using UnityEngine;
 public class Cube : MonoBehaviour, IPooledObject
 {
 
-    
+
     private Material thisMetarial;
     private int rand;
-    public GameObject[] touchingObject = new GameObject[6];
-    [HideInInspector]public bool selectable;
+     GameObject[] touchingObject = new GameObject[6];
+    public bool selectable;
     [HideInInspector] public bool pop;
     [HideInInspector] public bool popWithoutChain;
     [SerializeField] private GameObject _replacement;
@@ -22,7 +22,7 @@ public class Cube : MonoBehaviour, IPooledObject
     private bool notOnGrid;
     private bool downEmpty;
     private int closestY;
-    [HideInInspector] public bool isMoving;
+     public bool isMoving;
 
 
 
@@ -50,13 +50,13 @@ public class Cube : MonoBehaviour, IPooledObject
 
     private void Update()
     {
-        if(!isMoving)
+        if (!isMoving)
         {
             ConnectionChecker();
 
             PopChain();
         }
-    
+
         AutomaticPhysics();
 
     }
@@ -67,7 +67,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, transform.forward, out hitInfo, 2))
         {
-            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
+            if (hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[0] = hitInfo.transform.gameObject;
@@ -81,7 +81,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, -transform.forward, out hitInfo, 2))
         {
-            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
+            if (hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[1] = hitInfo.transform.gameObject;
@@ -96,7 +96,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, transform.right, out hitInfo, 2))
         {
-            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
+            if (hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[2] = hitInfo.transform.gameObject;
@@ -110,7 +110,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, -transform.right, out hitInfo, 2))
         {
-            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
+            if (hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[3] = hitInfo.transform.gameObject;
@@ -125,7 +125,7 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, transform.up, out hitInfo, 2))
         {
-            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
+            if (hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
 
                 touchingObject[4] = hitInfo.transform.gameObject;
@@ -139,9 +139,9 @@ public class Cube : MonoBehaviour, IPooledObject
 
         if (Physics.Raycast(transform.position, -transform.up, out hitInfo, 2))
         {
-            if(hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
+            if (hitInfo.transform.CompareTag("Cube") || hitInfo.transform.CompareTag("Box"))
             {
-                
+
                 touchingObject[5] = hitInfo.transform.gameObject;
             }
 
@@ -459,8 +459,9 @@ public class Cube : MonoBehaviour, IPooledObject
         }
         if (downEmpty)
         {
-            Vector3 taban = new Vector3(transform.position.x, 0, transform.position.z);
-            transform.position = Vector3.SmoothDamp(transform.position, taban, ref ManualGravity.instance.velocity, ManualGravity.instance.gravitySpeed * Time.deltaTime);
+
+            transform.Translate(0, -ManualGravity.instance.gravitySpeed * Time.deltaTime, 0);
+
         }
         else
         {
@@ -474,6 +475,11 @@ public class Cube : MonoBehaviour, IPooledObject
                 goToClosestGrid();
 
             }
+        }
+
+        if(transform.position.y <= 0)
+        {
+            isMoving = false;
         }
 
     }
@@ -505,11 +511,11 @@ public class Cube : MonoBehaviour, IPooledObject
         if (transform.position.y % 2.05 != 0)
         {
             float newY = FindClosestGrid();
-            
+
             Vector3 target = new Vector3(transform.position.x, newY, transform.position.z);
 
             distance = Mathf.Abs(transform.position.y - newY);
-            
+
 
             if (distance < 0.1f)
             {
@@ -518,8 +524,10 @@ public class Cube : MonoBehaviour, IPooledObject
             }
             else
             {
-                
-                transform.position = Vector3.SmoothDamp(transform.position, target, ref ManualGravity.instance.velocity, ManualGravity.instance.gravitySpeed * Time.deltaTime);
+
+
+                transform.position = Vector3.MoveTowards(transform.position, target, 2 * ManualGravity.instance.gravitySpeed * Time.deltaTime);
+
 
             }
 

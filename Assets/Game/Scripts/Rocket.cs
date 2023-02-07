@@ -38,19 +38,17 @@ public class Rocket : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, -transform.up, out hitInfo, ManualGravity.instance.raycastLength, ManualGravity.instance.cubeLayer))
         {
-            //Debug.DrawRay(transform.position, -transform.up*hitInfo.distance,Color.green);
+            
             downEmpty = false;
         }
         else
         {
-            //Debug.DrawRay(transform.position, -transform.up*20f,Color.red);
+            
             downEmpty = true;
         }
         if (downEmpty)
         {
-            Vector3 taban = new Vector3(transform.position.x, 0, transform.position.z);
-            //transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, 0, transform.position.z), Time.deltaTime);
-            transform.position = Vector3.SmoothDamp(transform.position, taban, ref ManualGravity.instance.velocity, ManualGravity.instance.gravitySpeed * Time.deltaTime);
+            transform.Translate(0,-ManualGravity.instance.gravitySpeed * Time.deltaTime,0);
         }
         else
         {
@@ -95,11 +93,11 @@ public class Rocket : MonoBehaviour
         if (transform.position.y % 2.05 != 0)
         {
             float newY = FindClosestGrid();
-            //print("ClosestY: " + closestY + " closestGrid: " + closestGrid + " newY: " + newY);
+            
             Vector3 target = new Vector3(transform.position.x, newY, transform.position.z);
 
             distance = Mathf.Abs(transform.position.y - newY);
-            //print(distance);
+            
 
             if (distance < 0.1f)
             {
@@ -107,8 +105,7 @@ public class Rocket : MonoBehaviour
             }
             else
             {
-                //transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime);
-                transform.position = Vector3.SmoothDamp(transform.position, target, ref ManualGravity.instance.velocity, ManualGravity.instance.gravitySpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, target, 2*ManualGravity.instance.gravitySpeed * Time.deltaTime);
 
             }
 
@@ -147,33 +144,4 @@ public class Rocket : MonoBehaviour
 
     }
     
-    private void OnCollisionStay(Collision other)
-    {
-
-        if (other.gameObject.CompareTag("Cube"))
-        {
-            other.transform.GetComponent<Cube>().popWithoutChain = true;
-        }
-
-        if (other.gameObject.CompareTag("Box"))
-        {
-            other.transform.GetComponent<Box>().pop = true;
-        }
-
-        if (other.gameObject.CompareTag("Rocket"))
-        {
-            other.transform.GetComponent<Rocket>().pop = true;
-        }
-
-        if (other.gameObject.CompareTag("Bomb"))
-        {
-            other.transform.GetComponent<Bomb>().pop = true;
-        }
-
-        if (other.gameObject.CompareTag("Laser"))
-        {
-            other.transform.GetComponent<Laser>().pop = true;
-        }
-
-    }
 }

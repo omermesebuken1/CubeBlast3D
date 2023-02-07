@@ -14,6 +14,11 @@ public class InGameUI : MonoBehaviour
 
     [SerializeField] private GameObject SettingsIcon;
 
+    [SerializeField] private GameObject Diag;
+
+    [SerializeField] private GameObject DiagOn;
+    [SerializeField] private GameObject DiagOff;
+
 
 
     private void Start()
@@ -21,6 +26,7 @@ public class InGameUI : MonoBehaviour
         Panel.SetActive(false);
         SettingsTouchBlocker.SetActive(false);
         SettingsIcon.SetActive(true);
+        CloseDiag();
 
     }
 
@@ -54,6 +60,25 @@ public class InGameUI : MonoBehaviour
         SettingsIcon.SetActive(false);
 
     }
+
+    public void OpenDiag()
+    {
+
+        Diag.SetActive(true);
+        DiagOff.SetActive(false);
+        DiagOn.SetActive(true);
+
+    }
+
+    public void CloseDiag()
+    {
+
+        Diag.SetActive(false);
+        DiagOff.SetActive(true);
+        DiagOn.SetActive(false);
+
+    }
+    
 
 
 

@@ -44,13 +44,13 @@ public class PopCounter : MonoBehaviour
                 powerAdded = true;
             }
 
-            if (popCount >= 7 && popCount <= 8)
+            if (popCount >= 7 && popCount <= 9)
             {
                 Instantiate(rocketPrefab, lastTouched.transform.position, lastTouched.transform.rotation);
                 powerAdded = true;
             }
 
-            if (popCount >= 9 && popCount <= 15)
+            if (popCount >= 10 && popCount <= 15)
             {
                 Instantiate(bombPrefab, lastTouched.transform.position, lastTouched.transform.rotation);
                 powerAdded = true;
