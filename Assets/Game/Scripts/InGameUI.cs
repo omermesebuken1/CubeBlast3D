@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InGameUI : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class InGameUI : MonoBehaviour
 
     [SerializeField] private GameObject SettingsTouchBlocker;
 
+    [SerializeField] private TextMeshProUGUI levelText;
+
     [SerializeField] private GameObject SettingsIcon;
 
     [SerializeField] private GameObject Diag;
@@ -19,6 +22,7 @@ public class InGameUI : MonoBehaviour
     [SerializeField] private GameObject DiagOn;
     [SerializeField] private GameObject DiagOff;
 
+    private bool levelTextWritten;
 
 
     private void Start()
@@ -27,13 +31,18 @@ public class InGameUI : MonoBehaviour
         SettingsTouchBlocker.SetActive(false);
         SettingsIcon.SetActive(true);
         CloseDiag();
-
+        levelTextWritten = false;
     }
 
 
 
     private void Update()
     {
+        if(FindObjectOfType<GamePlay>().activeSceneNumberChecked && !levelTextWritten)
+        {
+            levelText.text = "LEVEL " + FindObjectOfType<GamePlay>().activeSceneNumber;
+            levelTextWritten = true;
+        }
 
         if (FindObjectOfType<CameraController>())
         {

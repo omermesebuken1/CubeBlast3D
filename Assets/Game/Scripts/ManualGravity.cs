@@ -17,7 +17,7 @@ public class ManualGravity: MonoBehaviour
 { 
     
      QualitySettings.vSyncCount = 1;
-     Application.targetFrameRate = -1;
+     Application.targetFrameRate = 60;
      
  
     

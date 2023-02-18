@@ -6,7 +6,7 @@ public class LevelChecker : MonoBehaviour
 {
 
 
-    [SerializeField] private int hamleSayisi;
+    [SerializeField] public int hamleSayisi;
     public int boxCount;
     [SerializeField] private GameObject boxesParent;
 
@@ -25,7 +25,7 @@ public class LevelChecker : MonoBehaviour
             }
         }
 
-        boxCount = Boxes.Count;
+        boxCount = Boxes.Count-1;
 
     }
 
