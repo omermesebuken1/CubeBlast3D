@@ -87,7 +87,7 @@ public class GamePlay : MonoBehaviour
             int newScene = PlayerPrefs.GetInt("sceneNumber") + 1;
             if (SceneManager.GetSceneByName(newScene.ToString()).IsValid())
             {
-                LevelManager.Instance.LoadScene(newScene.ToString());
+                FindObjectOfType<LevelManager>().LoadScene(newScene.ToString());
             }
 
         }
@@ -107,10 +107,7 @@ public class GamePlay : MonoBehaviour
 
     public void GoToScene(string sceneName)
     {
-        if (SceneManager.GetSceneByName(sceneName.ToString()).IsValid())
-        {
-            LevelManager.Instance.LoadScene(sceneName);
-        }
+        FindObjectOfType<LevelManager>().LoadScene(sceneName);
     }
 
 }

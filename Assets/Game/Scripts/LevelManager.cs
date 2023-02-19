@@ -8,57 +8,50 @@ using System.Threading.Tasks;
 
 public class LevelManager : MonoBehaviour
 {
-    public static LevelManager Instance;
+    
     
     [SerializeField] private GameObject _loaderCanvas;
-    [SerializeField] private Image _progressBar;
-    private float _target;
+    
+    private bool transitionReady;
 
-    void Awake() {
-        
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+    private AsyncOperation scene;
 
-    }
-
-    public async void LoadScene(string sceneNAme)
+    public void LoadScene(string sceneNAme)
     {
         
-        _target = 0;
-        _progressBar.fillAmount = 0;
-
-        var scene = SceneManager.LoadSceneAsync(sceneNAme);
+        GetComponent<Animator>().SetTrigger("ExitScene");
+        scene = SceneManager.LoadSceneAsync(sceneNAme);
         scene.allowSceneActivation = false;
 
         _loaderCanvas.SetActive(true);
 
-        do
-        {   
-            await Task.Delay(100);
-            _target = scene.progress;
-            
-        } while (scene.progress < 0.9f);
-
-        await Task.Delay(1000);
         
-        scene.allowSceneActivation = true;
+
+    }
+
+
+    private void TransitionReady()
+    {
+        transitionReady = true;
+    }
+
+    private void SceneOpened()
+    {
         _loaderCanvas.SetActive(false);
-
-
     }
 
     private void Update() {
 
-        _progressBar.fillAmount = Mathf.MoveTowards(_progressBar.fillAmount,_target,3*Time.deltaTime);
-
+        if(transitionReady)
+        {
+        transitionReady = false;
+        scene.allowSceneActivation = true;
+       
+        }
+        
     }
+
+   
 
 
 

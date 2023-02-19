@@ -32,6 +32,8 @@ public class InGameUI : MonoBehaviour
         SettingsIcon.SetActive(true);
         CloseDiag();
         levelTextWritten = false;
+        camSensSlider.value = PlayerPrefs.GetFloat("CamSensi");
+        FindObjectOfType<CameraController>().cameraGeneralSensivity = camSensSlider.value / 50;
     }
 
 
@@ -48,7 +50,7 @@ public class InGameUI : MonoBehaviour
         {
 
             FindObjectOfType<CameraController>().cameraGeneralSensivity = camSensSlider.value / 50;
-
+            PlayerPrefs.SetFloat("CamSensi",camSensSlider.value);
         }
     }
 
@@ -87,6 +89,7 @@ public class InGameUI : MonoBehaviour
         DiagOn.SetActive(false);
 
     }
+
     
 
 

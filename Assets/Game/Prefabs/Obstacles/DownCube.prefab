@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6580924810480706025}
   - component: {fileID: 1750176258216590932}
   - component: {fileID: 8984913762986300706}
+  - component: {fileID: 9145096248610734676}
   m_Layer: 6
   m_Name: DownCube
   m_TagString: DownCube
@@ -118,3 +119,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9145096248610734676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4635567751374454844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3719b77552b0400990643947aa3e22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pop: 0
+  isCage: 0
