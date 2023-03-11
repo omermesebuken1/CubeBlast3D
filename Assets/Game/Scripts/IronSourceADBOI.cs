@@ -25,6 +25,7 @@ public class IronSourceADBOI : MonoBehaviour
     }
     private void Update()
     {
+
         if (rewardedAvaible)
         {
             showAdButton.SetActive(true);
@@ -35,6 +36,7 @@ public class IronSourceADBOI : MonoBehaviour
     public void CloseAll()
     {
         adCanvas.SetActive(false);
+        
         
     }
 
