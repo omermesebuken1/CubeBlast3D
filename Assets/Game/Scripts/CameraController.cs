@@ -19,8 +19,6 @@ public class CameraController : MonoBehaviour
 
     private bool touchEnabled;
 
-    
-
     [SerializeField] private float CameraUpDownSensivity;
 
     [SerializeField] private float CameraRotationSensivity;
