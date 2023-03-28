@@ -35,6 +35,8 @@ public class GamePlay : MonoBehaviour
         activeSceneNumberChecked = false;
         checkLevelID();
 
+        
+
     }
 
     private void Update()
@@ -63,12 +65,16 @@ public class GamePlay : MonoBehaviour
             //end game
         }
 
-        if (FindObjectOfType<LevelChecker>().boxCount == 0)
+        if (FindObjectOfType<LevelChecker>().boxCount == 0) //game win
         {
             boxesFinished.SetActive(true);
             boxCount.text = "";
             touchBlocker.SetActive(true);
             nextLevelPanel.SetActive(true);
+
+            PlayerPrefs.SetString("L" + PlayerPrefs.GetInt("sceneNumber").ToString(), "Finished");
+            PlayerPrefs.SetString("L" + (PlayerPrefs.GetInt("sceneNumber") + 1).ToString(), "Unlocked");
+
         }
 
 
@@ -85,9 +91,15 @@ public class GamePlay : MonoBehaviour
         if (PlayerPrefs.HasKey("sceneNumber"))
         {
             int newScene = PlayerPrefs.GetInt("sceneNumber") + 1;
-            if (SceneManager.GetSceneByName(newScene.ToString()).IsValid())
+            
+            if (PlayerPrefs.HasKey("L" + newScene.ToString()))
             {
                 FindObjectOfType<LevelManager>().LoadScene(newScene.ToString());
+            }
+            else
+            {
+                print(newScene);
+                print("scenename is not valid");
             }
 
         }
@@ -96,13 +108,13 @@ public class GamePlay : MonoBehaviour
 
     public void checkLevelID()
     {
-        if(!activeSceneNumberChecked)
+        if (!activeSceneNumberChecked)
         {
-        activeSceneNumber = SceneManager.GetActiveScene().name;
-        PlayerPrefs.SetInt("sceneNumber", int.Parse(activeSceneNumber));
-        activeSceneNumberChecked=true;
+            activeSceneNumber = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetInt("sceneNumber", int.Parse(activeSceneNumber));
+            activeSceneNumberChecked = true;
         }
-        
+
     }
 
     public void GoToScene(string sceneName)
