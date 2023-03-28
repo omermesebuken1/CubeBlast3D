@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package version="software5.7" xmlns="http://apple.com/itunes/importer">
+  <provider>H8N4MTFMYB</provider>
+  <team_id>H8N4MTFMYB</team_id>
+  <software>
+    <vendor_id>cubeblast3d</vendor_id>
+    <software_metadata>
+      <in_app_purchases>
+        <in_app_purchase>
+          <product_id>pack_26_50</product_id>
+          <reference_name>pack_26_50</reference_name>
+          <type>non-consumable</type>
+          <products>
+            <product>
+              <cleared_for_sale>true</cleared_for_sale>
+              <wholesale_price_tier>1</wholesale_price_tier>
+            </product>
+          </products>
+          <locales>
+            <locale name="en-US">
+              <title>Pack 26-50</title>
+              <description>Unlock levels 26-50</description>
+            </locale>
+          </locales>
+          <review_screenshot>
+            <file_name>pack1.png</file_name>
+            <size>34584</size>
+            <checksum>9bea1d450d97b8da318529ae75fa78fd</checksum>
+          </review_screenshot>
+        </in_app_purchase>
+        <in_app_purchase>
+          <product_id>pack_51_75</product_id>
+          <reference_name>pack_51_75</reference_name>
+          <type>non-consumable</type>
+          <products>
+            <product>
+              <cleared_for_sale>true</cleared_for_sale>
+              <wholesale_price_tier>1</wholesale_price_tier>
+            </product>
+          </products>
+          <locales>
+            <locale name="en-US">
+              <title>Pack 51-75</title>
+              <description>Unlock levels 51-75</description>
+            </locale>
+          </locales>
+          <review_screenshot>
+            <file_name>pack2.png</file_name>
+            <size>33698</size>
+            <checksum>51c149284515dd7780055cad7c01b46c</checksum>
+          </review_screenshot>
+        </in_app_purchase>
+        <in_app_purchase>
+          <product_id>pack_76_100</product_id>
+          <reference_name>pack_76_100</reference_name>
+          <type>non-consumable</type>
+          <products>
+            <product>
+              <cleared_for_sale>true</cleared_for_sale>
+              <wholesale_price_tier>1</wholesale_price_tier>
+            </product>
+          </products>
+          <locales>
+            <locale name="en-US">
+              <title>Pack 76-100</title>
+              <description>Unlock levels 76-100</description>
+            </locale>
+          </locales>
+          <review_screenshot>
+            <file_name>pack3.png</file_name>
+            <size>34362</size>
+            <checksum>52d7c1e86a439dcb48bfe96e950026f7</checksum>
+          </review_screenshot>
+        </in_app_purchase>
+      </in_app_purchases>
+    </software_metadata>
+  </software>
+</package>
