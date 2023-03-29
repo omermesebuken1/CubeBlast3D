@@ -31,6 +31,7 @@ public class PopCounter : MonoBehaviour
     {
         PopCount();
         BoxCount();
+        
     }
 
     private void AddPowerUp()
@@ -38,23 +39,40 @@ public class PopCounter : MonoBehaviour
         if (!powerAdded)
         {
 
-            if (popCount >= 5 && popCount <= 6)
+            if (popCount >= 5 && popCount <= 8)
             {
                 Instantiate(laserPrefab, lastTouched.transform.position, lastTouched.transform.rotation);
+                //print("Last Pop: " + popCount);
                 powerAdded = true;
+                countPops = false;
+                popCount = 0;
             }
 
-            if (popCount >= 7 && popCount <= 9)
+            else if (popCount >= 9 && popCount <= 12)
             {
                 Instantiate(rocketPrefab, lastTouched.transform.position, lastTouched.transform.rotation);
+                //print("Last Pop: " + popCount);
                 powerAdded = true;
+                countPops = false;
+                popCount = 0;
             }
 
-            if (popCount >= 10 && popCount <= 15)
+            else if (popCount >= 13)
             {
                 Instantiate(bombPrefab, lastTouched.transform.position, lastTouched.transform.rotation);
+                //print("Last Pop: " + popCount);
                 powerAdded = true;
+                countPops = false;
+                popCount = 0;
             }
+            else
+            {
+                //print("Pop: " + popCount);
+                countPops = false;
+                popCount = 0;
+            }
+
+            
 
         }
 

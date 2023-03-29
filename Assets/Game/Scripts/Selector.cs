@@ -111,6 +111,7 @@ public class Selector : MonoBehaviour
                         if (hitObject.transform.CompareTag("Rocket"))
                         {
                             hitObject.GetComponent<Rocket>().pop = true;
+                            FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
                             if(FindObjectOfType<GamePlay>() != null)
                             {
@@ -121,6 +122,7 @@ public class Selector : MonoBehaviour
                         if (hitObject.transform.CompareTag("Bomb"))
                         {
                             hitObject.GetComponent<Bomb>().pop = true;
+                            FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
                             if(FindObjectOfType<GamePlay>() != null)
                             {
@@ -131,6 +133,7 @@ public class Selector : MonoBehaviour
                         if (hitObject.transform.CompareTag("Laser"))
                         {
                             hitObject.GetComponent<Laser>().pop = true;
+                            FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
                             if(FindObjectOfType<GamePlay>() != null)
                             {

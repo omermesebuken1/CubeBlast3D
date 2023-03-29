@@ -57,7 +57,7 @@ public class GamePlay : MonoBehaviour
 
         }
 
-        if (moves == 0)
+        if (moves == 0 && FindObjectOfType<LevelChecker>().boxCount != 0)
         {
             moveCount.text = moves.ToString();
             touchBlocker.SetActive(true);
@@ -67,13 +67,20 @@ public class GamePlay : MonoBehaviour
 
         if (FindObjectOfType<LevelChecker>().boxCount == 0) //game win
         {
+            retryLevelPanel.SetActive(false);
             boxesFinished.SetActive(true);
             boxCount.text = "";
             touchBlocker.SetActive(true);
             nextLevelPanel.SetActive(true);
 
+
             PlayerPrefs.SetString("L" + PlayerPrefs.GetInt("sceneNumber").ToString(), "Finished");
-            PlayerPrefs.SetString("L" + (PlayerPrefs.GetInt("sceneNumber") + 1).ToString(), "Unlocked");
+
+            if(PlayerPrefs.GetString("L" + (PlayerPrefs.GetInt("sceneNumber") + 1).ToString()) ==  "Locked")
+            {
+                PlayerPrefs.SetString("L" + (PlayerPrefs.GetInt("sceneNumber") + 1).ToString(), "Unlocked");
+            }
+            
 
         }
 

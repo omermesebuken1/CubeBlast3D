@@ -260,7 +260,11 @@ public class Cube : MonoBehaviour, IPooledObject
                     mat.material.color = thisMetarial.color;
                 }
 
-                FindObjectOfType<PopCounter>().popCount++;
+                if(FindObjectOfType<PopCounter>().countPops == true)
+                {
+                    FindObjectOfType<PopCounter>().popCount++;
+                }
+                
 
                 if (ObjectPooler.Instance != null)
                 {
@@ -281,7 +285,11 @@ public class Cube : MonoBehaviour, IPooledObject
                     mat.material.color = thisMetarial.color;
                 }
 
-                FindObjectOfType<PopCounter>().popCount++;
+                if(FindObjectOfType<PopCounter>().countPops == true)
+                {
+                    FindObjectOfType<PopCounter>().popCount++;
+                }
+                
                 if (ObjectPooler.Instance != null)
                 {
                     ObjectPooler.Instance.ReturnObject(this.gameObject);
@@ -311,7 +319,10 @@ public class Cube : MonoBehaviour, IPooledObject
                     mat.material.color = thisMetarial.color;
                 }
 
-                FindObjectOfType<PopCounter>().popCount++;
+                if(FindObjectOfType<PopCounter>().countPops == true)
+                {
+                    FindObjectOfType<PopCounter>().popCount++;
+                }
 
                 if (ObjectPooler.Instance != null)
                 {
@@ -332,7 +343,10 @@ public class Cube : MonoBehaviour, IPooledObject
                     mat.material.color = thisMetarial.color;
                 }
 
-                FindObjectOfType<PopCounter>().popCount++;
+                if(FindObjectOfType<PopCounter>().countPops == true)
+                {
+                    FindObjectOfType<PopCounter>().popCount++;
+                }
 
                 if (ObjectPooler.Instance != null)
                 {

@@ -13,7 +13,7 @@ public class ObjectPooler : MonoBehaviour
     #endregion
 
     public GameObject prefab;
-    public int size;
+    public int maxSize;
 
     [SerializeField] private GameObject inactiveParentPrefab;
     private GameObject inactiveParent;
@@ -77,7 +77,7 @@ public class ObjectPooler : MonoBehaviour
         if(activeObjects.Count == 0)
         {
 
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < maxSize; i++)
             {
                 GameObject obj = Instantiate(prefab);
                 obj.name = "Kutu" + i.ToString();
@@ -89,8 +89,9 @@ public class ObjectPooler : MonoBehaviour
         }
         else
         {
+            
 
-            for (int i = size - activeObjects.Count; i < size; i++)
+            for (int i = activeObjects.Count; i < maxSize; i++)
             {
                 GameObject obj = Instantiate(prefab);
                 obj.name = "Kutu" + i.ToString();
