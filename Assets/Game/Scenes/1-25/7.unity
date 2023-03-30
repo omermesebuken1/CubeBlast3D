@@ -32836,6 +32836,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839202959244357664, guid: f112cabd14d2d4af6afbc08d57f4275e,
         type: 3}
+      propertyPath: maxSize
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839202959244357664, guid: f112cabd14d2d4af6afbc08d57f4275e,
+        type: 3}
       propertyPath: activeObjects.Array.size
       value: 114
       objectReference: {fileID: 0}

@@ -18,9 +18,16 @@ public class InGameUI : MonoBehaviour
     [SerializeField] private GameObject SettingsIcon;
 
     [SerializeField] private GameObject Diag;
-
     [SerializeField] private GameObject DiagOn;
     [SerializeField] private GameObject DiagOff;
+
+    
+    [SerializeField] private GameObject SoundOn;
+    [SerializeField] private GameObject SoundOff;
+
+    
+    [SerializeField] private GameObject VibrationOn;
+    [SerializeField] private GameObject VibrationOff;
 
     private bool levelTextWritten;
 
@@ -30,8 +37,14 @@ public class InGameUI : MonoBehaviour
         Panel.SetActive(false);
         SettingsTouchBlocker.SetActive(false);
         SettingsIcon.SetActive(true);
-        CloseDiag();
+        DeactivateDiag();
+        SoundStart();
+        VibrationStart();
         levelTextWritten = false;
+        if(PlayerPrefs.HasKey("CamSensi"))
+        {
+            camSensSlider.value = PlayerPrefs.GetFloat("CamSensi");
+        }
         camSensSlider.value = PlayerPrefs.GetFloat("CamSensi");
         FindObjectOfType<CameraController>().cameraGeneralSensivity = camSensSlider.value / 50;
     }
@@ -88,6 +101,78 @@ public class InGameUI : MonoBehaviour
         DiagOff.SetActive(true);
         DiagOn.SetActive(false);
 
+    }
+
+    private void DeactivateDiag()
+    {
+        Diag.SetActive(false);
+        DiagOff.SetActive(false);
+        DiagOn.SetActive(false);
+
+    }
+
+    private void SoundStart()
+    {
+        if(PlayerPrefs.HasKey("Sound"))
+        {
+            if(PlayerPrefs.GetInt("Sound") == 1)
+            {
+                SoundOn.SetActive(true);
+                SoundOff.SetActive(false);
+            }
+            else
+            {
+                SoundOn.SetActive(false);
+                SoundOff.SetActive(true);
+            }
+        }
+        
+    }
+
+    public void CloseSound()
+    {
+        SoundOn.SetActive(false);
+        SoundOff.SetActive(true);
+        PlayerPrefs.SetInt("Sound",0);
+    }
+
+    public void OpenSound()
+    {
+        SoundOn.SetActive(true);
+        SoundOff.SetActive(false);
+        PlayerPrefs.SetInt("Sound",1);
+    }
+
+    private void VibrationStart()
+    {
+        if(PlayerPrefs.HasKey("Vibration"))
+        {
+            if(PlayerPrefs.GetInt("Vibration") == 1)
+            {
+                VibrationOn.SetActive(true);
+                VibrationOff.SetActive(false);
+            }
+            else
+            {
+                VibrationOn.SetActive(false);
+                VibrationOff.SetActive(true);
+            }
+        }
+        
+    }
+
+    public void CloseVibration()
+    {
+        VibrationOn.SetActive(false);
+        VibrationOff.SetActive(true);
+        PlayerPrefs.SetInt("Vibration",0);
+    }
+
+    public void OpenVibration()
+    {
+        VibrationOn.SetActive(true);
+        VibrationOff.SetActive(false);
+        PlayerPrefs.SetInt("Vibration",1);
     }
 
     

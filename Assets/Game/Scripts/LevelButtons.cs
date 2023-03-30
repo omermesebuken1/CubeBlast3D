@@ -33,8 +33,15 @@ public class LevelButtons : MonoBehaviour
 
     public void GoToScene()
     {
-
-        FindObjectOfType<LevelManager>().LoadScene(levelNumber);
+         if(PlayerPrefs.HasKey("L" + levelNumber))
+        {
+        if(PlayerPrefs.GetString("L" + levelNumber) != "Locked")
+        {
+            FindObjectOfType<LevelManager>().LoadScene(levelNumber);
+        }
+        }
+        
+        
 
     }
 

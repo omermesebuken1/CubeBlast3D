@@ -26,12 +26,9 @@ public class FirstThingsFirst : MonoBehaviour
         }
 
 
-
-
-
-
-
-
+        PlayerPrefs.SetFloat("CamSensi",33f);
+        PlayerPrefs.SetInt("Sound",1);
+        PlayerPrefs.SetInt("Vibration",1);
 
 
     }
