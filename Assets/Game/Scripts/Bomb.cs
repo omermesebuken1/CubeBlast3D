@@ -22,6 +22,11 @@ public class Bomb : MonoBehaviour
     private bool downEmpty;
     private int closestY;
 
+    [SerializeField] private AudioClip BombPop;
+
+    [SerializeField] private GameObject soundEffect;
+    private bool bombSoundEffectCast;
+
 
     private void Update()
     {
@@ -72,6 +77,7 @@ public class Bomb : MonoBehaviour
 
             Instantiate(Effect1, transform.position, transform.rotation);
             Instantiate(Effect2, transform.position, transform.rotation);
+            BombSoundEffect();
             pop = false;
             Destroy(this.gameObject);
 
@@ -160,7 +166,6 @@ public class Bomb : MonoBehaviour
 
     }
 
-
     private void OnCollisionEnter(Collision other)
     {
 
@@ -192,7 +197,24 @@ public class Bomb : MonoBehaviour
 
     }
 
-    
+    private void BombSoundEffect()
+    {
+        if (PlayerPrefs.HasKey("Sound"))
+        {
+            if (PlayerPrefs.GetInt("Sound") == 1)
+            {
+
+                if (!bombSoundEffectCast)
+                {
+                    var sound_effect = Instantiate(soundEffect);
+                    sound_effect.GetComponent<AudioSource>().PlayOneShot(BombPop);
+                    bombSoundEffectCast = true;
+                }
+
+            }
+        }
+        
+    }    
 
 
 

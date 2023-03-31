@@ -16,6 +16,10 @@ public class Rocket : MonoBehaviour
     private bool notOnGrid;
     private bool downEmpty;
     private int closestY;
+
+    [SerializeField] private AudioClip RocketPop;
+    [SerializeField] private GameObject soundEffect;
+    private bool rocketSoundEffectCast;
     
    
     void Update()
@@ -24,6 +28,7 @@ public class Rocket : MonoBehaviour
         {
             Instantiate(rocketUstPrefab,transform.position,transform.rotation);
             Instantiate(rocketAltPrefab,transform.position,transform.rotation);
+            RocketSoundEffect();
             pop = false;
             //ObjectPooler.Instance.ReturnObject(this.gameObject);
             Destroy(this.gameObject);
@@ -141,6 +146,26 @@ public class Rocket : MonoBehaviour
         {
             other.transform.GetComponent<Laser>().pop = true;
         }
+
+    }
+
+    private void RocketSoundEffect()
+    {
+        if (PlayerPrefs.HasKey("Sound"))
+        {
+            if (PlayerPrefs.GetInt("Sound") == 1)
+            {
+
+                if (!rocketSoundEffectCast)
+                {
+                    var sound_effect = Instantiate(soundEffect);
+                    sound_effect.GetComponent<AudioSource>().PlayOneShot(RocketPop);
+                    rocketSoundEffectCast = true;
+                }
+
+            }
+        }
+        
 
     }
     

@@ -102,6 +102,9 @@ MonoBehaviour:
   Effect2: {fileID: 5525626679125739007, guid: dfb9239b2f66f4f498efafa1de993a83, type: 3}
   bombArea: 5
   pop: 0
+  BombPop: {fileID: 8300000, guid: d39da7e9a894d436ba7dbd57a9c0ee13, type: 3}
+  soundEffect: {fileID: 5324750910819088281, guid: d96c8a096d2544faa82787dc6b8d7555,
+    type: 3}
 --- !u!65 &741605352366361984
 BoxCollider:
   m_ObjectHideFlags: 0

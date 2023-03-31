@@ -18,6 +18,10 @@ public class Laser : MonoBehaviour
     private bool notOnGrid;
     private bool downEmpty;
     private int closestY;
+
+    [SerializeField] private AudioClip LaserPop;
+    [SerializeField] private GameObject soundEffect;
+    private bool laserSoundEffectCast;
    
 
    private void Update() {
@@ -32,7 +36,6 @@ public class Laser : MonoBehaviour
     public void Explode()
     {
         
-
         if(pop)
         {
 
@@ -67,6 +70,7 @@ public class Laser : MonoBehaviour
         }
 
         Instantiate(Effect1,transform.position,transform.rotation * Quaternion.Euler(90,0,0));
+        LaserSoundEffect();
         pop = false;
         Destroy(this.gameObject);
 
@@ -184,4 +188,24 @@ public class Laser : MonoBehaviour
 
     }
    
+
+   private void LaserSoundEffect()
+    {
+        if (PlayerPrefs.HasKey("Sound"))
+        {
+            if (PlayerPrefs.GetInt("Sound") == 1)
+            {
+
+                if (!laserSoundEffectCast)
+                {
+                    var sound_effect = Instantiate(soundEffect);
+                    sound_effect.GetComponent<AudioSource>().volume = 0.7f;
+                    sound_effect.GetComponent<AudioSource>().PlayOneShot(LaserPop);
+                    laserSoundEffectCast = true;
+                }
+
+            }
+        }
+        
+    }
 }

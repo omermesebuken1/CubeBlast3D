@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Selector : MonoBehaviour
 {
+
     private Touch touch;
 
     private GameObject hitObject;
@@ -16,6 +17,15 @@ public class Selector : MonoBehaviour
     [SerializeField] private LayerMask CubeLayer;
 
     private bool touchEnabled;
+
+    [SerializeField] private AudioClip SoftCubePop;
+
+    [SerializeField] private GameObject soundEffect;
+
+    private bool softCubeSoundEffectCast;
+    
+    static public bool boxSoundEffectCast;
+    
 
 
 
@@ -37,6 +47,9 @@ public class Selector : MonoBehaviour
 
                 if (touch.phase == TouchPhase.Began)
                 {
+                    softCubeSoundEffectCast = false;
+                    boxSoundEffectCast = false;
+
 
                     Ray ray = camera.ScreenPointToRay(touch.position);
 
@@ -98,7 +111,7 @@ public class Selector : MonoBehaviour
 
                         if (hitObject.transform.CompareTag("Cube"))
                         {
-                            if(FindObjectOfType<GamePlay>() != null)
+                            if (FindObjectOfType<GamePlay>() != null)
                             {
                                 FindObjectOfType<GamePlay>().moveUsed = true;
                             }
@@ -106,6 +119,9 @@ public class Selector : MonoBehaviour
                             FindObjectOfType<PopCounter>().countBoxes = true;
                             hitObject.GetComponent<Cube>().pop = true;
                             FindObjectOfType<PopCounter>().lastTouched = hitObject;
+                            SoftCubeSoundEffect();
+
+
                         }
 
                         if (hitObject.transform.CompareTag("Rocket"))
@@ -113,7 +129,7 @@ public class Selector : MonoBehaviour
                             hitObject.GetComponent<Rocket>().pop = true;
                             FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
-                            if(FindObjectOfType<GamePlay>() != null)
+                            if (FindObjectOfType<GamePlay>() != null)
                             {
                                 FindObjectOfType<GamePlay>().moveUsed = true;
                             }
@@ -124,7 +140,7 @@ public class Selector : MonoBehaviour
                             hitObject.GetComponent<Bomb>().pop = true;
                             FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
-                            if(FindObjectOfType<GamePlay>() != null)
+                            if (FindObjectOfType<GamePlay>() != null)
                             {
                                 FindObjectOfType<GamePlay>().moveUsed = true;
                             }
@@ -135,7 +151,7 @@ public class Selector : MonoBehaviour
                             hitObject.GetComponent<Laser>().pop = true;
                             FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
-                            if(FindObjectOfType<GamePlay>() != null)
+                            if (FindObjectOfType<GamePlay>() != null)
                             {
                                 FindObjectOfType<GamePlay>().moveUsed = true;
                             }
@@ -170,6 +186,31 @@ public class Selector : MonoBehaviour
             }
         }
     }
+
+    private void SoftCubeSoundEffect()
+    {
+        if (PlayerPrefs.HasKey("Sound"))
+        {
+            if (PlayerPrefs.GetInt("Sound") == 1)
+            {
+
+                if (!softCubeSoundEffectCast)
+                {
+                    var sound_effect = Instantiate(soundEffect);
+                    
+                    sound_effect.GetComponent<AudioSource>().pitch = 0.5f;
+                    sound_effect.GetComponent<AudioSource>().volume = 0.3f;
+                    sound_effect.GetComponent<AudioSource>().PlayOneShot(SoftCubePop);
+                    softCubeSoundEffectCast = true;
+                }
+
+            }
+        }
+    }
+
+    
+
+    
 
 }
 

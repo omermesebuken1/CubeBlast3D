@@ -17,7 +17,11 @@ public class Box : MonoBehaviour
     private int closestY;
 
     [SerializeField] private bool isCage;
-
+    
+    [SerializeField] private AudioClip BoxPop;
+    [SerializeField] private AudioClip CagePop;
+    [SerializeField] private GameObject soundEffect;
+    
 
     private void Start() {
 
@@ -40,6 +44,7 @@ public class Box : MonoBehaviour
         {
             
             //var replacement = Instantiate(_replacement,transform.position,transform.rotation);
+            BoxSoundEffect();
             var replacement = ObjectPoolerBrokenCubes.Instance.GetObject(transform.position, transform.rotation);
             var mrs = replacement.GetComponentsInChildren<MeshRenderer>();
             
@@ -132,5 +137,34 @@ public class Box : MonoBehaviour
 
     }
 
+    private void BoxSoundEffect()
+    {
+        if (PlayerPrefs.HasKey("Sound"))
+        {
+            if (PlayerPrefs.GetInt("Sound") == 1)
+            {
 
+                if (!Selector.boxSoundEffectCast)
+                {
+                    var sound_effect = Instantiate(soundEffect);
+
+                    if(isCage)
+                    {
+                        sound_effect.GetComponent<AudioSource>().PlayOneShot(CagePop);
+                    }
+                    else
+                    {
+                        sound_effect.GetComponent<AudioSource>().PlayOneShot(BoxPop);
+                    }
+                    
+                    Selector.boxSoundEffectCast = true;
+                }
+
+            }
+        }
+
+       
+        
+    }
+    
 }

@@ -15,27 +15,22 @@ public class DownCube : MonoBehaviour
     private bool notOnGrid;
     private bool downEmpty;
     private int closestY;
-
-    [SerializeField] private bool isCage;
-
-
+    
+    [SerializeField] private AudioClip DownCubePop;
+    [SerializeField] private GameObject soundEffect;
+    private bool DownCubeSoundEffectCast;
     private void Start() {
 
         thisMaterial = GetComponent<MeshRenderer>().material;
         pop = false;
-        
 
-        
-        
     }
     private void Update() {
 
         DownCubeChecker();
 
-        if(!isCage)
-        {
-            AutomaticPhysics();
-        }
+        AutomaticPhysics();
+        
         
         
         if(pop)
@@ -44,7 +39,7 @@ public class DownCube : MonoBehaviour
             //var replacement = Instantiate(_replacement,transform.position,transform.rotation);
             var replacement = ObjectPoolerBrokenCubes.Instance.GetObject(transform.position, transform.rotation);
             var mrs = replacement.GetComponentsInChildren<MeshRenderer>();
-            
+            DownCubeSoundEffect();
             foreach (var mat in mrs)
             {
                 mat.material.color = thisMaterial.color;
@@ -139,8 +134,27 @@ public class DownCube : MonoBehaviour
 
         if(transform.position.y == 0)
         {
-            pop = true;
+            pop = true; 
         }
 
     }
+    
+    private void DownCubeSoundEffect()
+    {
+        if (PlayerPrefs.HasKey("Sound"))
+        {
+            if (PlayerPrefs.GetInt("Sound") == 1)
+            {
+                if (!DownCubeSoundEffectCast)
+                {
+                    var sound_effect = Instantiate(soundEffect);
+                    sound_effect.GetComponent<AudioSource>().PlayOneShot(DownCubePop);
+                    DownCubeSoundEffectCast = true;
+                }
+
+            }
+        }
+        
+    }
+
 }

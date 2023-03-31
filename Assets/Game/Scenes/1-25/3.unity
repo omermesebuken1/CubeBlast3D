@@ -29071,7 +29071,7 @@ PrefabInstance:
     - target: {fileID: 1858280341557398279, guid: 0fc1a26b3e277449a8295e9c77ececa2,
         type: 3}
       propertyPath: hamleSayisi
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2720550474113615800, guid: 0fc1a26b3e277449a8295e9c77ececa2,
         type: 3}

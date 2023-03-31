@@ -130,3 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pop: 0
   isCage: 1
+  BoxPop: {fileID: 8300000, guid: 5f9bfb9eefa1f466c9f1ec0fee42b609, type: 3}
+  CagePop: {fileID: 8300000, guid: 531ac8c9d7a774248935fcc7a1d5b7fe, type: 3}
+  soundEffect: {fileID: 5324750910819088281, guid: d96c8a096d2544faa82787dc6b8d7555,
+    type: 3}
