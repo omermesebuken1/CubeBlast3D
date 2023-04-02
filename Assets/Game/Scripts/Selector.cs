@@ -25,6 +25,13 @@ public class Selector : MonoBehaviour
     private bool softCubeSoundEffectCast;
     
     static public bool boxSoundEffectCast;
+
+    Vibrator vibrator;
+
+    private void Start() {
+
+        vibrator = FindObjectOfType<Vibrator>();
+    }
     
 
 
@@ -120,6 +127,7 @@ public class Selector : MonoBehaviour
                             hitObject.GetComponent<Cube>().pop = true;
                             FindObjectOfType<PopCounter>().lastTouched = hitObject;
                             SoftCubeSoundEffect();
+                            vibrator.VibrateHard();
 
 
                         }

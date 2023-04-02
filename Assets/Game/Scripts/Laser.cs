@@ -22,7 +22,12 @@ public class Laser : MonoBehaviour
     [SerializeField] private AudioClip LaserPop;
     [SerializeField] private GameObject soundEffect;
     private bool laserSoundEffectCast;
-   
+    
+    Vibrator vibrator;
+    private void Start() {
+
+        vibrator = FindObjectOfType<Vibrator>();
+    }
 
    private void Update() {
 
@@ -71,6 +76,7 @@ public class Laser : MonoBehaviour
 
         Instantiate(Effect1,transform.position,transform.rotation * Quaternion.Euler(90,0,0));
         LaserSoundEffect();
+        vibrator.VibrateHard();
         pop = false;
         Destroy(this.gameObject);
 

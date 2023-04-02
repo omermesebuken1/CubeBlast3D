@@ -372,7 +372,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -650,6 +650,18 @@ MonoBehaviour:
           m_StringArgument: LevelPacks
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 932978743}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundEffect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &220780542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,6 +700,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220780539}
   m_CullTransparentMesh: 1
+--- !u!1001 &268298626
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2038767632436883671, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_Name
+      value: Vibrator
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2038767632436883673, guid: ae9cff2a46b914c44976b058090e698c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae9cff2a46b914c44976b058090e698c, type: 3}
 --- !u!1 &285190812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,7 +1290,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1623,7 +1704,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1783,7 +1864,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2032,7 +2113,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &700886276
 GameObject:
@@ -2134,7 +2215,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2443,7 +2524,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2603,7 +2684,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2901,7 +2982,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3184,7 +3265,7 @@ RectTransform:
   - {fileID: 843068619}
   - {fileID: 220780540}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3203,9 +3284,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6cb579c35e0461aa6c4c81b082de80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonClick1: {fileID: 8300000, guid: 851172c0ba6d343bd8987133ada3e577, type: 3}
-  ButtonClick2: {fileID: 8300000, guid: a4330d91766a84a218141297b17e79b0, type: 3}
-  SoundChoice: 0
+  buttonSound:
+  - {fileID: 8300000, guid: 851172c0ba6d343bd8987133ada3e577, type: 3}
+  - {fileID: 8300000, guid: a4330d91766a84a218141297b17e79b0, type: 3}
+  - {fileID: 8300000, guid: af939ae07fb1a4fcd94ddefbf58ba9cf, type: 3}
 --- !u!82 &932978744
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3415,7 +3497,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3575,7 +3657,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3836,7 +3918,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4132,7 +4214,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4292,7 +4374,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4452,7 +4534,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4884,7 +4966,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5180,7 +5262,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5340,7 +5422,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5500,7 +5582,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6260,7 +6342,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &1618285926
 MonoBehaviour:
@@ -6297,7 +6379,7 @@ PrefabInstance:
     - target: {fileID: 5585429100529582507, guid: e252b719f6a2b469fab00457be2a08fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5585429100529582507, guid: e252b719f6a2b469fab00457be2a08fa,
         type: 3}
@@ -6476,7 +6558,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6772,7 +6854,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6932,7 +7014,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7228,7 +7310,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7388,7 +7470,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7548,7 +7630,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8782,7 +8864,7 @@ MonoBehaviour:
       - m_Target: {fileID: 932978743}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: ButtonSoundEffect
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

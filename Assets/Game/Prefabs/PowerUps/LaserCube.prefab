@@ -114,7 +114,7 @@ MonoBehaviour:
   Effect1: {fileID: 4760019745173067843, guid: 87cf33ccc14c14c79964121ffccb15d1, type: 3}
   pop: 0
   BoxSize: {x: 10, y: 1, z: 10}
-  LaserPop: {fileID: 8300000, guid: 4732cf1c2e5f84fd391dc6be7f831dbf, type: 3}
+  LaserPop: {fileID: 8300000, guid: 17f246c2baf8f4c61b9eb9d36df9d2e9, type: 3}
   soundEffect: {fileID: 5324750910819088281, guid: d96c8a096d2544faa82787dc6b8d7555,
     type: 3}
 --- !u!54 &-1632288902282138738

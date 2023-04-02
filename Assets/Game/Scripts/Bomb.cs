@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Bomb : MonoBehaviour
 {
     private Collider[] objects;
@@ -22,10 +24,19 @@ public class Bomb : MonoBehaviour
     private bool downEmpty;
     private int closestY;
 
+    Vibrator vibrator;
+
+
     [SerializeField] private AudioClip BombPop;
 
     [SerializeField] private GameObject soundEffect;
     private bool bombSoundEffectCast;
+
+    private void Start() {
+
+        vibrator = FindObjectOfType<Vibrator>();
+        
+    }
 
 
     private void Update()
@@ -43,7 +54,7 @@ public class Bomb : MonoBehaviour
     {
         if (pop)
         {
-
+            
             foreach (var item in objects)
             {
 
@@ -78,6 +89,7 @@ public class Bomb : MonoBehaviour
             Instantiate(Effect1, transform.position, transform.rotation);
             Instantiate(Effect2, transform.position, transform.rotation);
             BombSoundEffect();
+            vibrator.VibrateHard();
             pop = false;
             Destroy(this.gameObject);
 
@@ -214,8 +226,14 @@ public class Bomb : MonoBehaviour
             }
         }
         
+        
+        
     }    
 
+
+    
+    
+    
 
 
 

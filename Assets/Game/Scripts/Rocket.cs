@@ -20,6 +20,13 @@ public class Rocket : MonoBehaviour
     [SerializeField] private AudioClip RocketPop;
     [SerializeField] private GameObject soundEffect;
     private bool rocketSoundEffectCast;
+
+    Vibrator vibrator;
+
+    private void Start() {
+
+        vibrator = FindObjectOfType<Vibrator>();
+    }
     
    
     void Update()
@@ -29,6 +36,7 @@ public class Rocket : MonoBehaviour
             Instantiate(rocketUstPrefab,transform.position,transform.rotation);
             Instantiate(rocketAltPrefab,transform.position,transform.rotation);
             RocketSoundEffect();
+            vibrator.VibrateHard();
             pop = false;
             //ObjectPooler.Instance.ReturnObject(this.gameObject);
             Destroy(this.gameObject);
