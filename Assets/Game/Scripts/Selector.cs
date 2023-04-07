@@ -137,6 +137,7 @@ public class Selector : MonoBehaviour
                             hitObject.GetComponent<Rocket>().pop = true;
                             FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
+                            FindObjectOfType<PopCounter>().lastTouched = hitObject;
                             if (FindObjectOfType<GamePlay>() != null)
                             {
                                 FindObjectOfType<GamePlay>().moveUsed = true;
@@ -148,6 +149,7 @@ public class Selector : MonoBehaviour
                             hitObject.GetComponent<Bomb>().pop = true;
                             FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
+                            FindObjectOfType<PopCounter>().lastTouched = hitObject;
                             if (FindObjectOfType<GamePlay>() != null)
                             {
                                 FindObjectOfType<GamePlay>().moveUsed = true;
@@ -159,6 +161,7 @@ public class Selector : MonoBehaviour
                             hitObject.GetComponent<Laser>().pop = true;
                             FindObjectOfType<PopCounter>().countPops = false;
                             FindObjectOfType<PopCounter>().countBoxes = true;
+                            FindObjectOfType<PopCounter>().lastTouched = hitObject;
                             if (FindObjectOfType<GamePlay>() != null)
                             {
                                 FindObjectOfType<GamePlay>().moveUsed = true;

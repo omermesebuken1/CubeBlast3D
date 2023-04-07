@@ -91,6 +91,10 @@ public class Bomb : MonoBehaviour
             BombSoundEffect();
             vibrator.VibrateHard();
             pop = false;
+            if(FindObjectOfType<PopCounter>().lastTouched == this.gameObject)
+        {
+            FindObjectOfType<PopCounter>().lastTouched = null;
+        }
             Destroy(this.gameObject);
 
         }

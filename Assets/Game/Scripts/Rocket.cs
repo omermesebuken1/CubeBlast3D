@@ -39,6 +39,10 @@ public class Rocket : MonoBehaviour
             vibrator.VibrateHard();
             pop = false;
             //ObjectPooler.Instance.ReturnObject(this.gameObject);
+            if(FindObjectOfType<PopCounter>().lastTouched == this.gameObject)
+        {
+            FindObjectOfType<PopCounter>().lastTouched = null;
+        }
             Destroy(this.gameObject);
         }
         

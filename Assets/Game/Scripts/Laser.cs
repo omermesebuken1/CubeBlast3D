@@ -36,6 +36,8 @@ public class Laser : MonoBehaviour
 
     AutomaticPhysics();
 
+    
+
    }
 
     public void Explode()
@@ -78,6 +80,10 @@ public class Laser : MonoBehaviour
         LaserSoundEffect();
         vibrator.VibrateHard();
         pop = false;
+        if(FindObjectOfType<PopCounter>().lastTouched == this.gameObject)
+        {
+            FindObjectOfType<PopCounter>().lastTouched = null;
+        }
         Destroy(this.gameObject);
 
         }

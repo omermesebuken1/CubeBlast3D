@@ -40,6 +40,7 @@ public class DownCube : MonoBehaviour
             var replacement = ObjectPoolerBrokenCubes.Instance.GetObject(transform.position, transform.rotation);
             var mrs = replacement.GetComponentsInChildren<MeshRenderer>();
             DownCubeSoundEffect();
+            FindObjectOfType<PopCounter>().countBoxes = true;
             foreach (var mat in mrs)
             {
                 mat.material.color = thisMaterial.color;
