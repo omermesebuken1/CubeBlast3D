@@ -9,9 +9,9 @@ public class GlassCreator : MonoBehaviour
     [SerializeField] private GameObject glassPrefab;
     [SerializeField] private float cubeSpace;
 
-    [SerializeField] private int positionX;
-    [SerializeField] private int positionY;
-    [SerializeField] private int positionZ;
+    [SerializeField] private float positionX;
+    [SerializeField] private float positionY;
+    [SerializeField] private float positionZ;
 
     [SerializeField] private int scaleX;
     [SerializeField] private int scaleY;
