@@ -14,6 +14,7 @@ public class CubeCustomInspector : Editor
     SerializedProperty xCount;
     SerializedProperty yCount;
     SerializedProperty zCount;
+    SerializedProperty colorCode;
   
     
 
@@ -26,6 +27,7 @@ public class CubeCustomInspector : Editor
          xCount = serializedObject.FindProperty("xCount");
          yCount = serializedObject.FindProperty("yCount");
          zCount = serializedObject.FindProperty("zCount");
+         colorCode = serializedObject.FindProperty("colorCode");
          
          
     }
@@ -49,6 +51,12 @@ public class CubeCustomInspector : Editor
         EditorGUILayout.PropertyField(xCount);
         EditorGUILayout.PropertyField(yCount);
         EditorGUILayout.PropertyField(zCount);
+        GUILayout.Label ("");
+        EditorGUILayout.PropertyField(colorCode);
+        GUILayout.Label("  0 = Random     1 = Red    2 = Blue    3 = Green    4 = Yellow");
+        
+
+
         
         serializedObject.ApplyModifiedProperties();
 

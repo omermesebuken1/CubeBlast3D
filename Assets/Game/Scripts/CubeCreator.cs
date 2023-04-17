@@ -26,6 +26,8 @@ public class CubeCreator : MonoBehaviour
     private Vector3 point2;
     private Vector3 Midpoint;
 
+    [SerializeField] private int colorCode;
+
     public void TheCubeCreator()
     {
         int i = 0;
@@ -44,7 +46,15 @@ public class CubeCreator : MonoBehaviour
                     tmpCube.transform.parent = theParent.transform;
                     tmpCube.name = "Cube" + i.ToString();
 
-                    tmpCube.GetComponent<Cube>().SetMetarial();
+                    if(colorCode == 0)
+                    {
+                        tmpCube.GetComponent<Cube>().SetMetarial();
+                    }
+                    else
+                    {
+                        tmpCube.GetComponent<Cube>().SetMetarialByChoice(colorCode);
+                    }
+                    
                     
 
                     if (x == 0 && z == 0 && y == 0)

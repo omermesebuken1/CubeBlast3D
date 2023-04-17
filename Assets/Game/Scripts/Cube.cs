@@ -460,6 +460,27 @@ public class Cube : MonoBehaviour, IPooledObject
         }
     }
 
+    public void SetMetarialByChoice(int colorCode)
+    {
+        switch (colorCode)
+        {
+            case 1:
+                GetComponent<MeshRenderer>().material.color = Color.red;
+                break;
+            case 2:
+                GetComponent<MeshRenderer>().material.color = Color.blue;
+                break;
+            case 3:
+                GetComponent<MeshRenderer>().material.color = Color.green;
+                break;
+            case 4:
+                GetComponent<MeshRenderer>().material.color = Color.yellow;
+                break;
+        }
+    }
+
+
+
     private void AutomaticPhysics()
     {
         if (Physics.Raycast(transform.position, -transform.up, out hitInfo, ManualGravity.instance.raycastLength, ManualGravity.instance.cubeLayer))
