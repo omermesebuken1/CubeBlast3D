@@ -25439,7 +25439,7 @@ PrefabInstance:
       objectReference: {fileID: 1374941114}
     - target: {fileID: 405501425, guid: 042838ca2c3064bf99c691fc41bc0e32, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Levels1
+      value: Levels2
       objectReference: {fileID: 0}
     - target: {fileID: 841902485, guid: 042838ca2c3064bf99c691fc41bc0e32, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -25483,7 +25483,7 @@ PrefabInstance:
       objectReference: {fileID: 1374941114}
     - target: {fileID: 1530482771, guid: 042838ca2c3064bf99c691fc41bc0e32, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Levels1
+      value: Levels2
       objectReference: {fileID: 0}
     - target: {fileID: 1758247002, guid: 042838ca2c3064bf99c691fc41bc0e32, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -25624,6 +25624,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1751369279}
+    - target: {fileID: 3375998896949008914, guid: 042838ca2c3064bf99c691fc41bc0e32,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3375998897406754264, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
       propertyPath: m_IsActive
@@ -25670,6 +25675,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1374941114}
+    - target: {fileID: 3375998898043622425, guid: 042838ca2c3064bf99c691fc41bc0e32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Levels2
+      objectReference: {fileID: 0}
     - target: {fileID: 3375998898043622426, guid: 042838ca2c3064bf99c691fc41bc0e32,
         type: 3}
       propertyPath: m_AnchoredPosition.x
