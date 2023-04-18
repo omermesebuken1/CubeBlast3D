@@ -16,7 +16,7 @@ public class FirstThingsFirst : MonoBehaviour
                 
                 PlayerPrefs.SetString("L" + i.ToString(),"Locked");
 
-                if(i == 1 || i == 25 || i == 50 || i == 75)
+                if(i == 1 || i == 26 || i == 51 || i == 76)
                 {
                     PlayerPrefs.SetString("L" + i.ToString(),"Unlocked");
                 }
